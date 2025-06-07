@@ -1,10 +1,13 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 {{-- resources/views/dashboard/create.drink.blade.php --}}
 @extends('layouts.app')
 
 @section('content')
     @include('dashboard.form', ['kategori' => 'drink'])
 =======
+=======
+>>>>>>> Stashed changes
 {{-- resources/views/dashboard/create.food.blade.php --}}
 @extends('layout')
 
@@ -17,5 +20,8 @@
         'produk' => null
     ])
 </div>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 @endsection
