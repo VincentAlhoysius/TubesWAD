@@ -10,7 +10,9 @@ class ProdukController extends Controller
     public function index()
     {
         $produks = Produk::all();
-        return view('produk.index', compact('produks'));
+        $total_food_stock = Produk::where('kategori', 'makanan')->sum('stok'); 
+        $total_drinks_stock = Produk::where('kategori', 'minuman')->sum('stok');
+        return view('produk.index', compact('produks', 'total_food_stock', 'total_drinks_stock'));
     }
 
     public function create()
